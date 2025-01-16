@@ -13,16 +13,27 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #ffffff;
+    margin: auto;
+}
 header{
     background-color: #ffee00;
     color: white;
     padding: 10px;
     text-align: center;
+    margin: auto;
 }
 
 header > h1{
     padding: 20px;
-    margin: 10px;
+    text-decoration: underline;
+}
+
+header > nav{
+    background-color: #837a00;
+    padding: 10px;
+    margin: auto;
 }
 
 header > nav > a{
@@ -40,13 +51,22 @@ header > nav > a:hover{
 }
 
 main{
-    background-image: linear-gradient(#ffee00 , #000000);
+    background-color: #837a00;
     color: white;
-    
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 700px;
-    height: 700px;
     text-align: center;
+    margin: auto;
+}
+
+footer{
+    background-color: #000000;
+    margin: auto;
+    font-size: 1em;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+footer a{
+    font-weight: bolder;
+    text-decoration: none;
 }
