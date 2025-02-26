@@ -1,2 +1,32 @@
 @charset "UTF-8";
 
+/* Estilos padrão para telas grandes (desktop) */
+body {
+    font-size: 16px;
+    background-color: #f4f4f4;
+}
+
+/* Tablets (largura máxima de 1024px) */
+@media (max-width: 1024px) {
+    body {
+        font-size: 14px;
+        background-color: #e0e0e0;
+    }
+}
+
+/* Celulares (largura máxima de 768px) */
+@media (max-width: 768px) {
+    body {
+        font-size: 12px;
+        background-color: #d0d0d0;
+    }
+}
+
+/* Celulares pequenos (largura máxima de 480px) */
+@media (max-width: 480px) {
+    body {
+        font-size: 10px;
+        background-color: #c0c0c0;
+    }
+}
+
