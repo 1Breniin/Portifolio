@@ -15,5 +15,47 @@
       margin-left: 0;
       display: block;
     }
+
+    #breno {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      height: 100vh;
+      text-align: right;
+  }
+  
+  .texto {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+  }
+  
+  #breno img {
+      width: 150px;
+      height: auto;
+      transition: transform 0.3s ease-in-out;
+  }
+  
+  #breno img:hover{
+      transform: scale(1.1);
+  }
+    
+  
+  #breno h1{
+      font-family: "Dela Gothic One", sans-serif;
+      font-size: 20px;
+  }
+  
+  #breno h3 {
+      font-family: monospace;
+      font-size: 12px;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 2px solid white;
+      width: 0;
+      
+      animation: typing 3s steps(20, end) infinite alternate, blink 0.7s infinite;
+  }
   }
 
