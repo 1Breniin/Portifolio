@@ -2,30 +2,6 @@
 
 @media (max-width: 768px) {
 
-
-    .menu {
-        display: none; /* Esconder o menu inicialmente */
-        flex-direction: column;
-        background: #333;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        width: 200px;
-        text-align: center;
-    }
-
-    .menu li {
-        padding: 15px;
-        border-bottom: 1px solid #555;
-    }
-
-    .menu-toggle {
-        display: block; /* Aparece no mobile */
-    }
-
-    .menu.active {
-        display: flex; /* Mostra o menu quando ativado */
-    }
     nav {
       flex-direction: column;
       gap: 10px;
