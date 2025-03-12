@@ -43,13 +43,12 @@ nav {
     margin: 0 auto;
     padding: 0 20px;
 }
-  
-nav > img {
+.inicio > img {
     width: 150px;
     transition: transform 0.3s ease-in-out;
 }
 
-nav > img:hover {
+.inicio > img:hover {
     transform: scale(1.1);
 }
 
@@ -106,4 +105,17 @@ nav > a:hover {
     width: 0;
     
     animation: typing 3s steps(20, end) infinite alternate, blink 0.7s infinite;
+}
+
+
+#sobre h1{
+    text-align: center;
+}
+
+#sobre h3{
+    text-align: center;
+}
+
+#sobre img{
+    width: 70vh;
 }
