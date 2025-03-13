@@ -242,17 +242,18 @@ nav > a:hover {
     align-items: center;
     background-color: #222;
     margin: 0 auto;
+    padding: 100px;
 }
 
 .linguagens {
     display: flex;
     flex-direction: row;
+    white-space: wrap;
     padding: 50px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
 }
 
-.linguagens p{
-    padding: 50px;
-}
 
 #habilidades h1{
     width: 50vh;
@@ -285,3 +286,41 @@ nav > a:hover {
     width: 100px;
     height: auto;
 }
+
+
+.ling-1 {
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+.ling-2 {
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+.ling-3 {
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+.ling-4 {
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+.ling-5 {
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+.ling-6 {
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+.ling-7 {
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
