@@ -4,8 +4,9 @@
 
     nav {
       flex-direction: column;
-      gap: 10px;
+      gap: 30px;
       text-align: center;
+      height: 100vh;
     }
   
     nav img {
