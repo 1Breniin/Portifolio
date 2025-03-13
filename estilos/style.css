@@ -28,11 +28,14 @@ html {
 header {
     background: #222;
     padding: 5px ;
-    width: 100%;
-    top: 0;
-    left: 0;
+    width: 99%;
+    top: 10px;
+    left: 10px;
+    right: 10px;
     z-index: 1000;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    position: fixed;
 }
   
 nav {
@@ -69,7 +72,7 @@ nav > a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 50px;
     height: 100vh;
     text-align: right;
 }
@@ -88,7 +91,18 @@ nav > a:hover {
 
 #breno img:hover{
     transform: scale(1.1);
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
 }
+
+#breno img:hover::after {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 150px;
+    background: url('medias/Logo colorida') no-repeat center/cover;
+    position: absolute;
+  }
   
 
 #breno h1{
