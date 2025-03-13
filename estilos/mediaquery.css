@@ -1,12 +1,13 @@
 @charset "UTF-8";
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 
     nav {
       flex-direction: column;
       gap: 30px;
       text-align: center;
-      height: 100vh;
+      justify-content: space-between;
+      padding-bottom: 20px;
     }
   
     nav img {
@@ -16,9 +17,12 @@
     nav a {
       margin-left: 0;
       display: block;
+      font-size: 14px;
     }
 
     #breno {
+      margin: 0;
+      padding: 0;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -34,7 +38,7 @@
   }
   
   #breno img {
-      width: 150px;
+      width: 200px;
       height: auto;
       transition: transform 0.3s ease-in-out;
   }
@@ -46,12 +50,12 @@
   
   #breno h1{
       font-family: "Dela Gothic One", sans-serif;
-      font-size: 15px;
+      font-size: 30px;
   }
   
   #breno h3 {
       font-family: monospace;
-      font-size: 12px;
+      font-size: 18px;
       white-space: nowrap;
       overflow: hidden;
       border-right: 2px solid white;
@@ -59,6 +63,50 @@
       
       animation: typing 3s steps(20, end) infinite alternate, blink 0.7s infinite;
   }
+
+  #sobre {
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    width: 90vw; /* Reduz a largura para se ajustar melhor */
+    height: auto; /* Deixa a altura flexível */
+    padding: 40px 15px; /* Reduz o espaçamento interno */
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+.conteudosobre {
+    text-align: center;
+    align-items: center;
+}
+
+#sobre h1 {
+    font-size: 30px; /* Diminui o tamanho do título */
+    width: 100%;
+    margin: 10px 0; /* Reduz margens para economizar espaço */
+}
+
+#sobre h2 {
+    font-size: 18px;
+    width: 90%;
+    padding: 10px;
+    text-align: center;
+}
+
+#sobre ol {
+    width: 90%;
+    padding-left: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+#sobre img {
+    width: 200px; /* Reduz o tamanho da imagem */
+    padding: 10px;
+}
+
+#sobre a {
+    width: 80%; /* Botão mais largo para toque fácil */
+    font-size: 18px;
+    padding: 10px;
+}
   }
 
 

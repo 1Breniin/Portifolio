@@ -28,13 +28,9 @@ html {
 header {
     background: #222;
     padding: 5px ;
-    width: 99%;
-    top: 10px;
-    left: 10px;
-    right: 10px;
+    width: 100%;
     z-index: 1000;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
-    border-radius: 20px;
     position: fixed;
 }
   
@@ -129,29 +125,67 @@ nav > a:hover {
 }
 
 #sobre {
-    background-color: #222;
-    width: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center center;
-    padding: 20px;
+    justify-content: center;
+    gap: 20px;
+    height: 60vh;
+    width: 110vh;
+    text-align: right;
+    border: 2px solid #222;
+    border-radius: 20px;
+    padding: 200px;
     margin: 0 auto;
+    margin-bottom: 200px;
+    box-shadow: 10px 10px 10px black;
+    transition: transform 0.3s ease-in-out;
+    background-color: rgb(255, 255, 255);
 }
 
-#sobre .conteudosobre {
+#sobre:hover{
+    transform: scale(1.1);
+}
+
+.conteudosobre {
     display: flex;
-    flex-direction: column; /* Coloca o h1 acima do h3 */
-    align-items: center;
+    flex-direction: column;
     text-align: center;
-    padding: 10px;
 }
 
-#sobre h1 {
+#sobre img {
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+#sobre img:hover{
+    transform: scale(1.1);
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.452));
+}
+
+#sobre img:hover::after {
+    content: "";
+    display: block;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+  }
+  
+
+#sobre h1{
+    width: 50vh;
+    font-family: "Dela Gothic One", sans-serif;
+    font-size: 40px;
     background-color: #ffee00;
-    border-radius: 10px;
-    padding: 10px;
-    width: 50%;
-    margin-bottom: 10px; /* Espaço entre h1 e h3 */
+    color: black;
+    border-radius: 20px;
+    margin: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    transition: transform 0.3s ease-in-out
 }
 
 #sobre h1:hover{
@@ -159,16 +193,95 @@ nav > a:hover {
     filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.452));
 }
 
-#sobre h3 {
-    width: 50%;
-    padding: 5px;
-    color: white;
+#sobre h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    white-space: wrap;
+    overflow: hidden;
+    text-align: left;
+    width: 50vh;
+    padding-left: 20px;
 }
 
-#sobre img {
-    height: 500px;
-    width: 700px;
-    border-radius: 100%;
-    object-fit: cover;
-    border: solid white;
+#sobre {
+    font-family: "DM Sans", sans-serif;
+    padding-left: 20px;
+    padding: 4px;
+    font-size: 20px;
+    text-align: left;
+}
+
+#sobre a{
+    margin-top: 10px;
+    color: black;
+    background-color: #ffee00;
+    width: 30%;
+    text-align: center;
+    white-space: wrap;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid black;
+    transition: color 0.3s ease-in-out;
+}
+
+#sobre a:hover{
+    background-color: #222;
+    color: #ffee00;
+    border: 1px solid #ffee00;
+    
+}
+
+#habilidades{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    margin: 0 auto;
+}
+
+.linguagens {
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+}
+
+.linguagens p{
+    padding: 50px;
+}
+
+#habilidades h1{
+    width: 50vh;
+    text-align: center;
+    font-family: "Dela Gothic One", sans-serif;
+    font-size: 40px;
+    background-color: #ffee00;
+    color: #222;
+    border-radius: 20px;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out
+
+}
+
+#habilidades h1:hover{
+    transform: scale(1.1);
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.452));
+}
+
+#habilidades p{
+    margin: 0 auto;
+    width: 50%;
+    color: white;
+    font-size: 20px;
+}
+
+#habilidades img{
+    width: 100px;
+    height: auto;
 }
