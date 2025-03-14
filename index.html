@@ -12,7 +12,8 @@
     <header>
         <nav>
             <a class="inicio" href="#breno">
-                <img src="medias/LOGO.png" alt="Logo"></a>
+                <img src="medias/LOGO.png" alt="Logo">
+            </a>
             <a href="#sobre">SOBRE</a>
             <a href="#habilidades">HABILIDADES</a>
             <a href="#projetos">PROJETOS</a>
@@ -97,28 +98,36 @@
                 <h1>Projetos</h1>
                 <p>Meus trabalhos</p>
             </div>
-            <div class="cards">
+            <div id="cards">
                 <div id="card-1">
                     <img src="medias/ProjetoLogin.png" alt="">
                     <div class="conteudo-cards">
                         <h1>Projeto-Login</h1>
                         <p>
-                            Login page made in HTML, CSS and JavaScript
+                            Landing page made in HTML, CSS and JavaScript
                         </p>
                         <p>
-                            <a href="https://projeto-login-1breniin.vercel.app" target="_blank">Website</a>
-                            <a href="https://github.com/1Breniin/projeto-login" target="_blank">Codigo</a>
+                            <div class="links">
+                                <a href="https://projeto-login-1breniin.vercel.app" target="_blank">Website</a>
+                                <a href="https://github.com/1Breniin/projeto-login" target="_blank">Codigo</a>
+                            </div>
                         </p>
                     </div>
                 </div>
                 <div id="card-2">
                     <img src="medias/Portfolio.png" alt="">
                     <div class="conteudo-cards">
+                        <h1>Portfolio Breno Esteves</h1>
                         <p>
-                            <a href="https://portifolio-1breniin.vercel.app">Website</a>
-                            <a href="https://github.com/1Breniin/Portifolio">Codigo</a>
+                            Lanin page made in HTML, CSS and JavaScript
+                        </p>
+                        <p>
+                            <div class="links">
+                                <a href="https://portifolio-1breniin.vercel.app">Website</a>
+                                <a href="https://github.com/1Breniin/Portifolio">Codigo</a>
+                            </div>
+                        </p>
                     </div>
-                    </p>
                 </div>
             </div>
         </div>
@@ -127,14 +136,19 @@
         <div id="contato">
             <h1>CONTATO</h1>
             <p>Sinta-se a vontade para entrar em contato.</p>
-            <img src="medias/social/instagram.png" alt="instagram">
-            <img src="medias/social/o-email.png" alt="email">
+            <a href="https://www.instagram.com/brenoesteves_/" target="_blank"><img src="medias/social/instagram.png" alt="instagram"></a>
+            <a href="mailto:brenoesteves243@gmail.com"><img src="medias/social/o-email.png" alt="email"></a>
         </div>
     </main>
     <footer>
-        <p>Site desenvolvido por <a href="#">Breno Esteves (Estevz Draw)</a></p>
-        <p></p>
-        <a href="https://github.com/1Breniin" target="_blank"><img src="medias/linguagens/github.png" alt="github"></a>
+        <div class="footer-content">
+            <p>Site desenvolvido por <a href="#">Breno Esteves (Estevz Draw)</a></p>
+            <div class="social-links">
+                <a href="https://github.com/1Breniin" target="_blank">
+                    <img src="medias/linguagens/github.png" alt="GitHub">
+                </a>
+            </div>
+        </div>
     </footer>
     <script src="script.js"></script>
 </body>
