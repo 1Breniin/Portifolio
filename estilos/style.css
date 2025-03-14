@@ -67,6 +67,17 @@ nav > a:hover {
     filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.753));
 }
 
+.efeito{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1.0s ease-out, transform 1.0s ease-out;
+}
+
+.efeito.active{
+    opacity: 1;
+    transform: translateY(0);
+}
+
 #breno {
     display: flex;
     align-items: center;
@@ -240,19 +251,11 @@ nav > a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #222;
+    border: 2px solid #000000;
     margin: 0 auto;
     padding: 100px;
 }
 
-.linguagens {
-    display: flex;
-    flex-direction: row;
-    white-space: wrap;
-    padding: 50px;
-    border: 2px solid rgb(255, 255, 255);
-    border-radius: 20px;
-}
 
 
 #habilidades h1{
@@ -262,12 +265,13 @@ nav > a:hover {
     font-size: 40px;
     background-color: #ffee00;
     color: #222;
+    border: 2px solid black;
     border-radius: 20px;
-    margin: 20px;
+    margin-bottom: 20px;
     justify-content: center;
     align-items: center;
-    transition: transform 0.3s ease-in-out
-
+    transition: transform 0.3s ease-in-out;
+    
 }
 
 #habilidades h1:hover{
@@ -277,50 +281,169 @@ nav > a:hover {
 
 #habilidades p{
     margin: 0 auto;
-    width: 50%;
     color: white;
     font-size: 20px;
 }
 
 #habilidades img{
-    width: 100px;
+    width: 50px;
     height: auto;
 }
 
+#linguagens {
+    width: 110vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    white-space: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    background-color: #2b2b2b;
+    box-shadow: 10px 10px 10px black;
+
+}
+
+#linguagens img{
+    filter: invert(1);
+
+}
+
+#linguagens img:hover{
+    transform: scale(1.1);
+}
 
 .ling-1 {
+    flex-direction: row;
     padding: 20px;
-    border: 1px solid white;
-    border-radius: 10px;
+    margin: 10px;
 }
+
 .ling-2 {
     padding: 20px;
-    border: 1px solid white;
-    border-radius: 10px;
+    margin: 10px;
 }
+
 .ling-3 {
     padding: 20px;
-    border: 1px solid white;
-    border-radius: 10px;
+    margin: 10px;
 }
+
 .ling-4 {
     padding: 20px;
-    border: 1px solid white;
-    border-radius: 10px;
+    margin: 10px;
 }
+
 .ling-5 {
     padding: 20px;
-    border: 1px solid white;
-    border-radius: 10px;
+    margin: 10px;
 }
+
 .ling-6 {
     padding: 20px;
-    border: 1px solid white;
-    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
 }
+
 .ling-7 {
     padding: 20px;
-    border: 1px solid white;
-    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
 }
+
+.ling-8 {
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+.ling-9 {
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+.ling-10 {
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+#projetos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 100px;
+}
+
+.titulo-projetos h1{
+    width: 50vh;
+    text-align: center;
+    font-family: "Dela Gothic One", sans-serif;
+    font-size: 40px;
+    background-color: #ffee00;
+    color: #222;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.titulo-projetos h1:hover{
+    transform: scale(1.1);
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.452));
+}
+
+
+.titulo-projetos p{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    padding-bottom: 70px;
+}
+
+.cards{
+    display: flex;
+}
+#card-1{
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 8px #888888;
+}
+
+#card-1 img{
+    width: 500px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.conteudo-cards{
+    padding: 20px;
+}
+
+
+#card-2{
+    padding: 50px;
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 8px #888888;
+}
+
+#card-2 img{
+    width: 500px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.conteudo-cards{
+    padding: 20px;
+}
+
 
