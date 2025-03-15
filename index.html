@@ -14,10 +14,19 @@
             <a class="inicio" href="#breno">
                 <img src="medias/LOGO.png" alt="Logo">
             </a>
-            <a href="#sobre">SOBRE</a>
-            <a href="#habilidades">HABILIDADES</a>
-            <a href="#projetos">PROJETOS</a>
-            <a href="#contato">CONTATO</a>
+    
+            <div class="menu-hamburguer" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+    
+            <div class="menu-links">
+                <a href="#sobre">SOBRE</a>
+                <a href="#habilidades">HABILIDADES</a>
+                <a href="#projetos">PROJETOS</a>
+                <a href="#contato">CONTATO</a>
+            </div>
         </nav>
     </header>
     <main>
@@ -118,9 +127,11 @@
                     <img src="medias/Portfolio.png" alt="">
                     <div class="conteudo-cards">
                         <h1>Portfolio Breno Esteves</h1>
-                        <p>
-                            Lanin page made in HTML, CSS and JavaScript
-                        </p>
+                        <div id="linkCard-1">
+                            <p>
+                                Lanin page made in HTML, CSS and JavaScript
+                            </p>
+                        </div>
                         <p>
                             <div class="links">
                                 <a href="https://portifolio-1breniin.vercel.app" target="_blank">Website</a>

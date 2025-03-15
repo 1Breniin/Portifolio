@@ -2,22 +2,34 @@
 
 @media (max-width: 1024px) {
 
-    nav {
-      flex-direction: column;
-      gap: 30px;
-      text-align: center;
-      justify-content: space-between;
-      padding-bottom: 20px;
+    .menu-hamburguer {
+        display: flex;
     }
-  
-    nav img {
-      margin-bottom: 10px;
+
+    .menu-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 84px;
+        right: 0px;
+        background: #222;
+        width: 200px;
+        padding: 10px;
+        box-shadow: 0 4px 5px rgba(0, 0, 0, 0.7);
     }
-  
-    nav a {
-      margin-left: 0;
-      display: block;
-      font-size: 14px;
+
+    .menu-links.show {
+        display: flex;
+    }
+
+    .menu-links ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu-links a {
+        text-align: center;
+        display: block;
     }
 
     #breno {
@@ -60,16 +72,15 @@
       overflow: hidden;
       border-right: 2px solid white;
       width: 0;
-      
       animation: typing 3s steps(20, end) infinite alternate, blink 0.7s infinite;
   }
 
   #sobre {
-    flex-direction: column; /* Empilha os elementos verticalmente */
-    width: 70vw; /* Reduz a largura para se ajustar melhor */
-    height: auto; /* Deixa a altura flexível */
-    padding: 40px 15px; /* Reduz o espaçamento interno */
-    text-align: center; /* Centraliza o conteúdo */
+    flex-direction: column;
+    width: 70vw;
+    height: auto;
+    padding: 40px 20px;
+    text-align: center;
 }
 
 .conteudosobre {
@@ -78,9 +89,9 @@
 }
 
 #sobre h1 {
-    font-size: 20px; /* Diminui o tamanho do título */
+    font-size: 20px;
     width: 100%;
-    margin: 10px 0; /* Reduz margens para economizar espaço */
+    margin: 10px 0;
 }
 
 #sobre h2 {
@@ -91,39 +102,39 @@
 }
 
 #sobre p{
-    font-size: 15px;
+    font-size: 13px;
 }
 
 
 #sobre img {
-    width: 150px; /* Reduz o tamanho da imagem */
+    width: 150px;
     padding: 10px;
 }
 
 #sobre a {
-    width: 40%; /* Botão mais largo para toque fácil */
+    width: 40%;
     font-size: 14px;
     padding: 5px;
 }
 
 #habilidades{
-    flex-direction: column; /* Empilha os elementos verticalmente */
-    width: 70vw; /* Reduz a largura para se ajustar melhor */
-    height: auto; /* Deixa a altura flexível */
-    padding: 40px 15px; /* Reduz o espaçamento interno */
-    text-align: center; /* Centraliza o conteúdo */
+    flex-direction: column;
+    width: 70vw;
+    height: auto;
+    padding: 40px 15px;
+    text-align: center;
 }
 
 #habilidades h1{
-    font-size: 30px; /* Diminui o tamanho do título */
+    font-size: 20px;
     width: 100%;
-    margin: 10px 0; /* Reduz margens para economizar espaço */
+    margin: 10px 0;
 }
 
 #linguagens {
-    width: 80vw; /* Reduz a largura para se ajustar melhor */
-    height: auto; /* Deixa a altura flexível */
-    padding: 20px 5px; /* Reduz o espaçamento interno */
+    width: 80vw;
+    height: auto;
+    padding: 20px 5px;
     text-align: center;
 }
 
@@ -138,16 +149,16 @@
 .titulo-projetos {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Garante que o título e o texto fiquem no centro */
+    align-items: center;
     text-align: center;
-    width: 100%; /* Faz com que o container ocupe toda a largura disponível */
+    width: 100%;
 }
 
 .titulo-projetos h1 {
-    font-size: 30px;
-    max-width: 70%; /* Evita ultrapassar os limites */
-    margin: 0 auto;
-    text-align: center; /* Garante que o texto fique centralizado */
+    font-size: 20px;
+    width: 100%;
+    margin: 10px 0
+    text-align: center;
 }
 
 .titulo-projetos p {
@@ -158,27 +169,29 @@
 #cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Garante que os cards fiquem sempre centralizados */
+    justify-content: center;
     align-items: center;
     gap: 40px;
     margin: 0 auto;
     padding: 50px;
     text-align: center;
-    width: 100%; /* Garante que o container ocupe toda a largura */
+    width: 100%;
 }
 
 #card-1, #card-2 {
-    width: 500px; /* Aqui você pode definir a largura desejada */
-    height: 400px;
+    width: 90%;
+    max-width: 350px;
+    min-width: 280px;
+    height: 500px;
     border-radius: 20px;
     background-color: #303030;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.521);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    animation: pulse 3s infinite alternate ease-in-out;
 }
 
 #card-1 img, #card-2 img {
     width: 100%;
-    border-radius: 20px 20px 0px 0px;
 }
 
 #card-2 img {
@@ -197,27 +210,46 @@
     margin: 5px;
 }
 
-#card-2 p {
-    padding-bottom: 15px;
-
-}
 
 .conteudo-cards p {
     font-size: 16px;
     color: #ffffff;
     line-height: 1.6;
-    margin-bottom: 15px;
+    margin-bottom: 50px;
     text-align: left;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
 }
 
+#card-2 p{
+    margin-bottom: 15px;
+}
 
 #contato {
     width: 80vw;
 }
 
-#contato h1{}
-
+#contato h1{
+    font-size: 20px;
+    width: 100%;
+    margin: 10px 0;
 }
+
+footer{
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+}
+}
+
+
 
 

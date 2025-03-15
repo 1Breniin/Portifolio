@@ -27,13 +27,13 @@ html {
 
 header {
     background: #222;
-    padding: 5px ;
+    padding: 5px;
     width: 100%;
     z-index: 1000;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
     position: fixed;
 }
-  
+
 nav {
     display: flex;
     align-items: center;
@@ -42,6 +42,7 @@ nav {
     margin: 0 auto;
     padding: 0 20px;
 }
+
 .inicio > img {
     width: 150px;
     transition: transform 0.3s ease-in-out;
@@ -52,30 +53,52 @@ nav {
     filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.452));
 }
 
-nav > a {
+.menu-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    gap: 120px;
+}
+
+.menu-links a {
     color: white;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
-    margin-left: 20px;
     transition: color 0.3s ease-in-out;
 }
-  
-nav > a:hover {
+
+.menu-links a:hover {
     color: #ffee00;
     transform: scale(1.1);
     filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.753));
 }
 
-.efeito{
+.efeito {
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 1.0s ease-out, transform 1.0s ease-out;
 }
 
-.efeito.active{
+.efeito.active {
     opacity: 1;
     transform: translateY(0);
+}
+
+.menu-hamburguer {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.3s;
 }
 
 #breno {
@@ -167,6 +190,7 @@ nav > a:hover {
     padding: 20px;
     width: 300px;
     transition: transform 0.3s ease-in-out;
+    animation: pulse 3s infinite alternate ease-in-out;
     
 }
 
@@ -580,5 +604,25 @@ footer a:hover {
 
 .social-links a:hover img {
     transform: scale(1.1);
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.05);
+    }
 }
 

@@ -40,3 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
       observer.observe(element);
     });
 });
+
+function toggleMenu() {
+  document.querySelector(".menu-links").classList.toggle("show");
+}
