@@ -26,7 +26,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 10px;
+      gap: 5px;
       height: 100vh;
       text-align: right;
   }
@@ -38,7 +38,7 @@
   }
   
   #breno img {
-      width: 200px;
+      width: 100px;
       height: auto;
       transition: transform 0.3s ease-in-out;
   }
@@ -50,12 +50,12 @@
   
   #breno h1{
       font-family: "Dela Gothic One", sans-serif;
-      font-size: 30px;
+      font-size: 20px;
   }
   
   #breno h3 {
       font-family: monospace;
-      font-size: 18px;
+      font-size: 13px;
       white-space: nowrap;
       overflow: hidden;
       border-right: 2px solid white;
@@ -66,7 +66,7 @@
 
   #sobre {
     flex-direction: column; /* Empilha os elementos verticalmente */
-    width: 90vw; /* Reduz a largura para se ajustar melhor */
+    width: 70vw; /* Reduz a largura para se ajustar melhor */
     height: auto; /* Deixa a altura flexível */
     padding: 40px 15px; /* Reduz o espaçamento interno */
     text-align: center; /* Centraliza o conteúdo */
@@ -78,39 +78,145 @@
 }
 
 #sobre h1 {
-    font-size: 30px; /* Diminui o tamanho do título */
+    font-size: 20px; /* Diminui o tamanho do título */
     width: 100%;
     margin: 10px 0; /* Reduz margens para economizar espaço */
 }
 
 #sobre h2 {
-    font-size: 18px;
+    font-size: 17px;
     width: 90%;
     padding: 10px;
     text-align: center;
 }
 
-#sobre ol {
-    width: 90%;
-    padding-left: 10px;
-    font-size: 18px;
-    text-align: center;
+#sobre p{
+    font-size: 15px;
 }
 
+
 #sobre img {
-    width: 200px; /* Reduz o tamanho da imagem */
+    width: 150px; /* Reduz o tamanho da imagem */
     padding: 10px;
 }
 
 #sobre a {
-    width: 80%; /* Botão mais largo para toque fácil */
-    font-size: 18px;
-    padding: 10px;
+    width: 40%; /* Botão mais largo para toque fácil */
+    font-size: 14px;
+    padding: 5px;
+}
+
+#habilidades{
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    width: 70vw; /* Reduz a largura para se ajustar melhor */
+    height: auto; /* Deixa a altura flexível */
+    padding: 40px 15px; /* Reduz o espaçamento interno */
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+#habilidades h1{
+    font-size: 30px; /* Diminui o tamanho do título */
+    width: 100%;
+    margin: 10px 0; /* Reduz margens para economizar espaço */
 }
 
 #linguagens {
-    width: 60vh;
+    width: 80vw; /* Reduz a largura para se ajustar melhor */
+    height: auto; /* Deixa a altura flexível */
+    padding: 20px 5px; /* Reduz o espaçamento interno */
+    text-align: center;
 }
+
+#linguagens img{
+    width: 40px;
+}
+
+#linguagens p{
+    font-size: 13px;
+}
+
+.titulo-projetos {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Garante que o título e o texto fiquem no centro */
+    text-align: center;
+    width: 100%; /* Faz com que o container ocupe toda a largura disponível */
+}
+
+.titulo-projetos h1 {
+    font-size: 30px;
+    max-width: 70%; /* Evita ultrapassar os limites */
+    margin: 0 auto;
+    text-align: center; /* Garante que o texto fique centralizado */
+}
+
+.titulo-projetos p {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Garante que os cards fiquem sempre centralizados */
+    align-items: center;
+    gap: 40px;
+    margin: 0 auto;
+    padding: 50px;
+    text-align: center;
+    width: 100%; /* Garante que o container ocupe toda a largura */
+}
+
+#card-1, #card-2 {
+    width: 500px; /* Aqui você pode definir a largura desejada */
+    height: 400px;
+    border-radius: 20px;
+    background-color: #303030;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.521);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#card-1 img, #card-2 img {
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#card-2 img {
+    height: 150px;
+}
+
+.conteudo-cards a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #ffee00;
+    color: #242424;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+    margin: 5px;
+}
+
+#card-2 p {
+    padding-bottom: 15px;
+
+}
+
+.conteudo-cards p {
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: left;
+    padding-bottom: 30px;
+}
+
+
+#contato {
+    width: 80vw;
+}
+
+#contato h1{}
 
 }
 
