@@ -88,7 +88,7 @@ nav {
 }
 
 .menu-hamburguer {
-    display: none;
+    display: flex;
     flex-direction: column;
     cursor: pointer;
 }
@@ -99,6 +99,10 @@ nav {
     background-color: white;
     margin: 5px 0;
     transition: 0.3s;
+}
+
+.menu-hamburguer.ativo .bar {
+    background-color: #ffee00;
 }
 
 #breno {

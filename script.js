@@ -42,5 +42,9 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function toggleMenu() {
-  document.querySelector(".menu-links").classList.toggle("show");
+  const menu = document.querySelector(".menu-links");
+  const hamburguer = document.querySelector(".menu-hamburguer");
+
+  menu.classList.toggle("show");
+  hamburguer.classList.toggle("ativo"); // Adiciona a classe para mudar a cor
 }

@@ -95,7 +95,7 @@
 }
 
 #sobre h2 {
-    font-size: 17px;
+    font-size: 14px;
     width: 90%;
     padding: 10px;
     text-align: center;
@@ -157,7 +157,7 @@
 .titulo-projetos h1 {
     font-size: 20px;
     width: 100%;
-    margin: 10px 0
+    margin: 10px 0;
     text-align: center;
 }
 
@@ -248,6 +248,7 @@ footer{
         transform: scale(1.05);
     }
 }
+
 }
 
 
