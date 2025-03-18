@@ -1,44 +1,51 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const logoBreno = document.getElementById("logo-breno");
+  const logoBreno = document.getElementById("logo-breno");
+  if (window.innerWidth > 768) {
+      logoBreno.addEventListener("mouseover", function () {
+          this.src = "medias/Logo colorida.png";
+      });
 
-    logoBreno.addEventListener("mouseover", function () {
-        this.src = "medias/Logo colorida.png";
-    });
-
-    logoBreno.addEventListener("mouseout", function () {
-        this.src = "medias/Logo degrade.png";
-    });
+      logoBreno.addEventListener("mouseout", function () {
+          this.src = "medias/Logo degrade.png";
+      });
+  } else {
+      logoBreno.src = "medias/Logo colorida.png";
+  }
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    const logoBreno = document.getElementById("FotoRealEditada");
+  const logoBreno = document.getElementById("FotoRealEditada");
 
-    logoBreno.addEventListener("mouseover", function () {
-        this.src = "medias/FotoRealEditada.png";
-    });
+  if (window.innerWidth > 768) {
+      logoBreno.addEventListener("mouseover", function () {
+          this.src = "medias/FotoRealEditada.png";
+      });
 
-    logoBreno.addEventListener("mouseout", function () {
-        this.src = "medias/FotoRealDegrade.png";
-    });
+      logoBreno.addEventListener("mouseout", function () {
+          this.src = "medias/FotoRealDegrade.png";
+      });
+  } else {
+      logoBreno.src = "medias/FotoRealEditada.png";
+  }
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    const elements = document.querySelectorAll(".efeito");
-  
-    const observer = new IntersectionObserver(
+  const elements = document.querySelectorAll(".efeito");
+
+  const observer = new IntersectionObserver(
       (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("active");
-          }
-        });
+          entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                  entry.target.classList.add("active");
+              }
+          });
       },
       { threshold: 0.2 }
-    );
-  
-    elements.forEach((element) => {
+  );
+
+  elements.forEach((element) => {
       observer.observe(element);
-    });
+  });
 });
 
 function toggleMenu() {
